@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TitleCasingComponent } from './title-casing/title-casing.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorsComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasingComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
