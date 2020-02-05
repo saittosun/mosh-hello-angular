@@ -4,4 +4,29 @@
     {{author}}
   </li>
 </ul>
-<p>{{getAuthorAlternative()}}</p>
+<input (keyup.enter)="onKeyUp($event)" />
+<br>
+<br>
+<input #email (keyup.enter)="onVariable(email.value)" />
+
+<br>
+<br>
+<input [value]="password" (keyup.enter)="password = $event.target.value; onTwoWayBinding()" />
+<input [(ngModel)]="password" (keyup.enter)="onTwoWayBinding()" />
+
+
+<p [style.color]="isStyled ? 'blue' : 'red'">{{getAuthorAlternative()}}</p>
+<button 
+  class="btn btn-primary" 
+  [class.active]="isActive"
+  (click)="onSave($event)">add</button>
+<br>
+<br>
+<p>{{book.title | uppercase}}</p>
+<p>{{book.rating | number}}</p>
+<p>{{book.students | number:'1.2-2'}}</p>
+<p>{{book.price | currency:'AUD':true:'3.2-2'}}</p>
+<p>{{book.releaseDate | date:'shortDate'}}</p>
+
+<h6>{{text | summary: 10}}</h6>
+
