@@ -38,6 +38,6 @@ export class TitleCasePipe implements PipeTransform {
     }
     private isPreposition(word: string): boolean {
       const prepositions = ['of', 'the'];
-      return prepositions.includes(word.toLowerCase())
+      return prepositions.includes(word.toLowerCase());
     }
 }

@@ -8,6 +8,8 @@ import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasingComponent } from './title-casing/title-casing.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { BuildingReusableFavoriteComponent } from './building-reusable-favorite/building-reusable-favorite.component';
+import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TitleCasePipe } from './title-case.pipe';
     SummaryPipe,
     FavoriteComponent,
     TitleCasingComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    BuildingReusableFavoriteComponent,
+    BootstrapPanelComponent
   ],
   imports: [
     BrowserModule,

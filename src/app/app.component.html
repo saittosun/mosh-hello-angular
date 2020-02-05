@@ -2,3 +2,24 @@
 <app-authors></app-authors>
 <app-favorite></app-favorite>
 <app-title-casing></app-title-casing>
+<app-building-reusable-favorite 
+  [is-favorite]="post.isFavorite"
+  (change)="onFavoriteChanged($event)"></app-building-reusable-favorite>
+<app-bootstrap-panel>
+  <div class="header">Header</div>
+  <div class="body">
+    <h2>
+      <p>body</p>
+      <h3>some content</h3>
+    </h2>
+  </div>
+</app-bootstrap-panel>
+<app-bootstrap-panel>
+  <ng-container class="header">Header</ng-container>
+  <div class="body">
+    <h2>
+      <p>body</p>
+      <h3>some content</h3>
+    </h2>
+  </div>
+</app-bootstrap-panel>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FavoriteChangedEventArgs } from './building-reusable-favorite/building-reusable-favorite.component';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+  // building-reusable-favorite
+  post = {
+    title: 'Title',
+    isFavorite: true
+  };
+  onFavoriteChanged(eventArgs: FavoriteChangedEventArgs) {// passing event data
+    console.log('favorite changed!!!', eventArgs);
+  }
 }
