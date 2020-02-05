@@ -8,6 +8,13 @@ import { FavoriteChangedEventArgs } from './building-reusable-favorite/building-
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // assignment-4
+  tweet = {
+    body: 'here is the body of tweet',
+    likesCount: 10,
+    isLiked: true
+  };
+
   title = 'Angular';
   // building-reusable-favorite
   post = {

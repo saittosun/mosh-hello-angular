@@ -10,6 +10,7 @@ import { TitleCasingComponent } from './title-casing/title-casing.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { BuildingReusableFavoriteComponent } from './building-reusable-favorite/building-reusable-favorite.component';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.compo
     TitleCasingComponent,
     TitleCasePipe,
     BuildingReusableFavoriteComponent,
-    BootstrapPanelComponent
+    BootstrapPanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
