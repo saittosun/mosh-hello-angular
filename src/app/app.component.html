@@ -26,3 +26,10 @@
 <app-like 
   [likesCount]="tweet.likesCount"
   [isActive]="tweet.isLiked"></app-like>
+<app-directives-course></app-directives-course>
+
+<!--custom directives-->
+<br>
+<!--bir tane bind property oldugu icin asagidakini degistirdi-->
+<!-- <input type="text" appInputFormat [format]="'uppercase'"> -->
+<input type="text" [appInputFormat]="'uppercase'">

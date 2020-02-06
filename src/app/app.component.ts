@@ -8,6 +8,9 @@ import { FavoriteChangedEventArgs } from './building-reusable-favorite/building-
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // ngswitchcase
+  viewMode = 'something';
+
   // assignment-4
   tweet = {
     body: 'here is the body of tweet',

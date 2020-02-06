@@ -1,4 +1,10 @@
 <i 
   class="fa fa-star"
-  [class.red]="isSelected"
+  [ngClass]="{
+    'red': isSelected,
+    'green': !isSelected
+  }"
   (click)="onClick()"></i>
+  <!--yukaridaki ngclass directive-->
+  <!-- [class.red]="isSelected"
+  [class.green]="!isSelected" -->

@@ -11,6 +11,8 @@ import { TitleCasePipe } from './title-case.pipe';
 import { BuildingReusableFavoriteComponent } from './building-reusable-favorite/building-reusable-favorite.component';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 import { LikeComponent } from './like/like.component';
+import { DirectivesCourseComponent } from './directives-course/directives-course.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LikeComponent } from './like/like.component';
     TitleCasePipe,
     BuildingReusableFavoriteComponent,
     BootstrapPanelComponent,
-    LikeComponent
+    LikeComponent,
+    DirectivesCourseComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
